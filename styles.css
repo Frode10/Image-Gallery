@@ -1,0 +1,90 @@
+/* css reset */
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+background: rgb(203, 203, 203);
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+nav > ul {
+    display:flex;
+    gap:1rem;
+    width: 100%;
+    list-style: none;
+    margin:2rem;
+}
+nav > ul > li:hover {
+    text-decoration: underline;
+    color:blue;
+}
+
+
+main {
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+#button-container {
+    width: 100%;
+    padding:2rem;
+    margin:1rem;
+    background-color: lightblue;
+}
+
+button {
+    padding:0.5rem 2rem;
+    background-color: azure;
+}
+
+h1 {
+color:rgb(71, 71, 71);
+margin:2rem;
+
+}
+/* Tekst over bildet */
+.tekst {
+    
+    position:absolute;
+    top:0rem;
+    left: 0rem;
+    padding:0.8rem 2rem;
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 10px;
+    z-index:10;
+    font-size: small;
+    border-bottom: 3px solid rgb(45, 45, 45);
+    border-right: 1px solid rgb(36, 36, 36);
+}
+
+.gallery {
+    display:flex;
+    flex-wrap: wrap;
+    
+    gap:0.5rem;
+    padding:0.5rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.image-wrapper {
+    position:relative;
+
+    flex: 1 0 400px;
+}
+.image-wrapper img {
+
+height:100%;
+   width:100%;
+    object-fit:cover;
+}
